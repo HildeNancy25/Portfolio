@@ -6,24 +6,26 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="main.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body class="bg-black text-white">
     <div class="mt-10"> 
         <nav class="flex items-center px-20 py-3 fixed top-0 left-0 right-0 bg-black">
             <img class="w-12"  src="logo.png">
+            <i class="fa fa-bars" aria-hidden="true"></i>
             <ul class="flex-1 text-center">
-                <li class="px-5 list-none inline-block"><a href="#" class="px-2 hover:text-yellow-300">Home</a></li>
-                <li class="px-5 list-none inline-block"><a href="#" class="px-2 hover:text-yellow-300">About</a></li>
-                <li class="px-5 list-none inline-block"><a href="#" class="px-2 hover:text-yellow-300">Resume</a></li>
-                <li class="px-5 list-none inline-block"><a href="#" class="px-2 hover:text-yellow-300">Projects</a></li>
-                <li class="px-5 list-none inline-block"><a href="#" class="px-2 hover:text-yellow-300">Contact</a></li>
+                <li class="px-5 list-none inline-block"><a href="#Home" class="px-2 hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">Home</a></li>
+                <li class="px-5 list-none inline-block"><a href="#About" class="px-2 hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">About</a></li>
+                <li class="px-5 list-none inline-block"><a href="#Resume" class="px-2 hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">Resume</a></li>
+                <li class="px-5 list-none inline-block"><a href="#Projects" class="px-2 hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">Projects</a></li>
+                <li class="px-5 list-none inline-block"><a href="#Contact" class="px-2 hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">Contact</a></li>
             </ul>
         </nav>
     </div>
 
     <!-- HOME  -->
 
-    <div class="px-60 flex flex-row  items-center my-20 pt-20">
+    <div id="Home" class="px-60 flex flex-row items-center justify-between pt-56">
         <div class=" w-1/3">
             <h6>HELLO !</h6>
             <h2 class="text-3xl font-bold text-yellow-300"><br><span class="text-white">I'M</span> Hilde Nancy</h2>
@@ -36,14 +38,16 @@
                 <button class="px-3 py-1 border rounded-full">MY WORKS</button>
             </div>
         </div>
-        <div class="w-full x1:absolute xl:w-1/2 bottom-0 right-20">
-            <img src="./logo.png">
+        <div class="w-full x1:absolute xl:w-1/2 mt-16 bottom-0 right-20">
+            <img src="./image.png">
         </div>
     </div>
 
-    <section class="px-60 flex p-10 gap-40">
-            <div class="w-full x1:absolute xl:w-1/2 bottom-0">
-                <img src="logo.png">
+    <!-- ABOUT  -->
+
+    <section id="About" class="px-72 flex mt-72 gap-20">
+            <div class="w-1/2 bottom-0 mt-28">
+                <img src="image.png">
             </div>
             <div class="w-1/2 leading-normal">
                 <p class="text-3xl font-bold">About Me</p>
@@ -59,7 +63,11 @@
                 <p class="pt-3">
                     Phone: +250 783 399 776
                 </p>
-                <p class="pt-6"><span class="text-yellow-300">27</span> Projects complete</p>
+                <p class="pt-3">
+                    Email: Hildenancyi@gmail.com
+                </p>
+
+                <p class="pt-8"><span class="text-yellow-300">27</span> Projects complete</p>
                 <button class="bg-yellow-300 text-black px-3 py-1 mt-4 rounded-full">DOWNLOAD CV</button>
             </div>
         </div>  
@@ -68,12 +76,12 @@
 
     <!-- RESUME  -->
 
-    <div class="text-3xl">
-        <h2 class="flex justify-center mt-8">Resume</h2>
+    <div id="Resume" class="text-3xl mt-72" >
+        <h2 class="flex justify-center">Resume</h2>
     </div>
     <section>
         <div class="flex flex-row gap-8 px-40 pt-10">
-            <div class="flex flex-col w-1/2 bg-gray-500 p-4 ">
+            <div class="flex flex-col w-1/2 border-2 border-gray-500 p-4 ">
                 <h6>2023-2024</h6>
                 <h2 class="pt-2"><b>California University of ARTS</b></h2>
                 <p><i> UI/UX Specialisation </i></p>
@@ -86,7 +94,7 @@
                 </ul>  
             </div>
         
-            <div class="flex flex-col w-1/2 bg-gray-500 p-4 ">
+            <div class="flex flex-col w-1/2 border-2 border-gray-500 p-4 ">
                 <h6>2017-2022</h6>
                 <h2 class="pt-2"><b> University of RWANDA</b></h2>
                 <p><i> Information System </i></p>
@@ -104,7 +112,7 @@
         </div>
         
         <div class="flex flex-row gap-8 mt-8 px-40">
-            <div class="flex flex-col w-1/2 bg-gray-500 p-4 ">
+            <div class="flex flex-col w-1/2 border-2 border-gray-500 p-4 ">
                 <h6>2014-2016</h6>
                 <h2 class="pt-2"><b>Es. Marie Adelaide</b></h2>
                 <p><i> Mathematics-Computer science-Economics </i></p>
@@ -113,14 +121,14 @@
                     <li> c programming language</li>
                     <li> c++ </li>
                     <li> html and css</li>
+                    <li> MySQL and Oracle database developer</li>
                 </ul>       
             </div>
         
-            <div class="flex flex-col w-1/2 bg-gray-500 p-4 ">
+            <div class="flex flex-col w-1/2 border-2 border-gray-500 p-4 ">
                 <h6>2015-2021</h6>
                 <h2><b> Certificates of completion</b></h2>
                 <ul class="pt-3">
-                    <li> SKILLS:</li>
                     <li> 2024: UI/UX Specialisation</li>
                     <li> 2021: Resonate, RISE & STEM in partenership with Girls in ICT</li>
                     <li> 2017: Student for Liberty Rwanda</li>
@@ -132,28 +140,66 @@
 
     <!-- PROJECTS  -->
 
-    <div class="p-5 bg-black text-white text-3xl">
+    <div id="Projects" class="p-5 bg-black text-white text-3xl mt-60">
         <h2 class="flex justify-center p-5">Featured Projects</h2>
     </div>
 
     <section class="bg-black text-white px-60 py-30 flex flex-col gap-20 items-center">
-        <div class="flex flex-row items-center mt-5 gap-40 bg-gray-600 p-10">
+        <div class="flex flex-row items-center mt-5 gap-20 p-10 hover:border-l-2 hover:border-yellow-200">
+            <div class="w-full x1:absolute xl:w-1/2 bottom-0 flex flex-row flex-wrap gap-2">
+                <img src="rock.png" class="w-48">
+                <img src="ageCalc.png" class="w-48">
+                <img src="dice.png" class="w-48">
+                <img src="emoji.png" class="w-48">
+            </div>
+            <div class="w-1/2 leading-normal pl-1">
+                <p class="text-gray-400">JavaScript, CSS, HTML</p>
+                <p>Restaurant </p>
+                <p class="pt-5">
+                    In these game projects, I used 62% of JavaScript, 19.8% of CSS and 18.3% of HTML.
+                    this was quite amazing in both creation and testing. Building efficiency one 
+                    line of code at a time! Dive into a project fueled by JavaScript, HTML, and CSS, 
+                    where productivity meets innovation.
+
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-row-reverse items-center mt-5 gap-20 bg-gray-600 p-10 hover:border-l-2 hover:border-yellow-200">
+            <div class="w-full x1:absolute xl:w-1/2 bottom-0 flex flex-row gap-1">
+                <img src="proj4.png" class="w-1/2">
+                <img src="proj4.0.png" class="w-1/2">
+            </div>
+            <div class="w-1/2 leading-normal pl-1">
+                <p class="text-gray-400">UI/UX Design</p>
+                <p>Restaurant </p>
+                <p class="pt-5">
+                    In this Restaurant project, I used Baslamiq cloud to design a website 
+                    that will be used to order food and beverages.
+                    I discovered the Baslamiq cloud which is easy and very friendly inCreating 
+                    seamless experiences through intuitive design. Elevate user satisfaction with 
+                    a UI/UX project driven by creativity and innovation.
+                </p>
+            </div>
+        </div> 
+
+        <div class="flex flex-row items-center mt-5 gap-20 p-10 hover:border-l-2 hover:border-yellow-200">
             <div class="w-full x1:absolute xl:w-1/2 bottom-0">
                 <img src="./proj1.png">
             </div>
-            <div class="w-1/2 leading-normal">
+            <div class="w-1/2 leading-normal pl-1">
                 <p class="text-gray-400">UI/UX Design</p>
                 <p>WAKA Fitness - Dashboard </p>
                 <p class="pt-5">
-                    In my project "Waka Fitness," I utilized Figma to design a comprehensive fitness application 
+                    In my project "Waka Fitness" with Figma, I designed a comprehensive fitness application 
                     aimed at promoting health and well-being. The design process involved meticulous 
                     attention to detail and a focus on creating a user-friendly interface 
                     that seamlessly integrates with the user's fitness journey.
                 </p>
             </div>
         </div>  
-        <div class="flex flex-row gap-40 items-center bg-gray-600 p-10">
-            <div class="w-1/2">
+
+        <div class="flex flex-row gap-20 items-center bg-gray-600 p-10 hover:border-l-2 hover:border-yellow-200">
+            <div class="w-1/2 pl-1">
                 <p class="text-gray-400">
                     UI/UX Design
                 </p>
@@ -161,9 +207,10 @@
                     KGL SHAKES - Interface
                 </p>
                 <p class="pt-5">
-                    In the "KGL Milkshakes" project, I utilized Figma 
+                    In the "KGL Milkshakes" project, I used Figma 
                     to create a vibrant and engaging digital experience 
-                    for a milkshake brand focused on quality and creativity.
+                    for a milkshake brand focused on quality and creativity
+                    where form meets function for a truly engaging experience.
                 </p>
             </div>
         
@@ -171,77 +218,49 @@
                 <img src="./proj2.png">
             </div>
         </div>
-        <div class="flex flex-row items-center mt-5 gap-40 bg-gray-600 p-10">
-            <div class="w-full x1:absolute xl:w-1/2 bottom-0 flex flex-row gap-1">
-                <img src="proj4.png" class="w-1/2">
-                <img src="proj4.0.png" class="w-1/2">
-            </div>
-            <div class="w-1/2 leading-normal">
-                <p class="text-gray-400">UI/UX Design</p>
-                <p>Restaurant </p>
-                <p class="pt-5">
-                    In this Restaurant project, I used Baslamiq cloud to design a website 
-                    that will be used to order food and beverages.
-                </p>
-            </div>
-        </div> 
+        
     </section>
 
     <!-- CONTACT  -->
 
-    <div class="p-5 bg-black text-white text-3xl">
+    <div id="Contact" class="p-5 bg-black text-white text-3xl mt-72">
         <h2 class="flex justify-center p-5">Contact</h2>
     </div>
 
     <section class="gap-8 px-40 pt-10">
-        <div class="py-30 flex flex-row gap-20 items-center">
-            <img src="./logo.png"/>
-        
-
-            <div class="px-60 py-30 flex flex-col">
-                <form action=""></form>
-                    Name<input type="text" placeholder="Enter your first name"/> Email
-                    <input type="email" placeholder="Enter your e-mail"/>Message
-                    <input type="text" value="SEND NOW"/>
+        <div class="py-30 ml-36 flex flex-row gap-20 items-center">
+            <img src="./image.png"/>
+            <div class="flex flex-col">
+                <form action="" class="w-96"></form>
+                    Names:
+                    <input class="p-1 text-black" type="text" placeholder="Enter your first name"/>
+                    Email: 
+                    <input class="p-1 mt-2 text-black" type="email" placeholder="Enter your e-mail"/>
+                    Message:
+                    <textarea class="p-1 h-52 text-black" placeholder="Enter your message here!"></textarea>
                 </form>
+                <button class="bg-yellow-300 text-black w-40 mt-6 p-2 rounded-full">Send Message</button>
             </div>
         </div>
-        <div class>
-            <div class="mt-5">
-                <p>
-                    passionate about Front-end developer and ux designs
-                    that transform ideas into exeptional digital experience.
-                </p>
-                <p> Let's Chat</p>
-            </div>
-            <div class="lastnav">
-                <ul class="flex-1 text-center">
-                    <li class="px-5 list-none"><a href="#" class="px-2 hover:text-yellow-300">Home</a></li>
-                    <li class="px-5 list-none"><a href="#" class="px-2 hover:text-yellow-300">About</a></li>
-                    <li class="px-5 list-none"><a href="#" class="px-2 hover:text-yellow-300">Resume</a></li>
-                    <li class="px-5 list-none"><a href="#" class="px-2 hover:text-yellow-300">Projects</a></li>
-                    <li class="px-5 list-none"><a href="#" class="px-2 hover:text-yellow-300">Contact</a></li>
-                </ul>
-            </div>
-            <div class="flex gap-4">
-                <p>Hildenancyi@gmail.com</p>
-                <p>Kigali, Kicukiro, Gatenga </p>
-            </div>
-        </div>
-        
-       
-
+            
     </section>
 
     <!-- fOOTER  -->
 
-    <section>
-        <p> &copy;2024 All Right Reserved</p>
-        <div>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-pinterest"></i>
+    <section class="flex flex-row justify-center gap-40 mt-40">
+        <p class="p-4 "> &copy;2024 All Rights Reserved</p>
+        <div class="p-4">
+            <a href="https://www.instagram.com/h___nancy/" class="mr-4 hover:text-pink-500 hover:border-b-2 hover:border-pink-300 ">
+                <i class="fab fa-instagram text-3xl"></i>
+            </a>
+            <a href="https://github.com/HildeNancy25?tab=repositories" class="mr-4 hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">
+                <i class="fa-brands fa-github text-3xl"></i>
+            </a>
+            <a href="https://www.tiktok.com/@h___nancy?_t=8knrlOZMOak&_r=1" class="hover:text-red-600 hover:border-b-2 hover:border-red-300">
+                <i class="fa-brands fa-tiktok text-3xl"></i>
+            </a>
+            
+            
         </div>
     </section>
 
