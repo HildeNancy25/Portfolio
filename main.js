@@ -1,6 +1,6 @@
-const navBar = document.querySelector(".fa-bars");
-const hideMenu = document.querySelector(".menu");
+const navBar = document.getElementById("hiddenMenu");
+const hideMenu = document.getElementById("dropMenu");
 
 navBar.addEventListener("click", () => {
-  hideMenu.classList.toggle("show-menu");
+  hideMenu.classList.toggle("hidden");
 });
