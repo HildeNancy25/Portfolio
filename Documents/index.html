@@ -8,97 +8,98 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
+
 <body class="bg-black text-white font-serif">
-    <div class="mt-10"> 
-        <nav class="flex items-center px-20 py-3 fixed top-0 left-0 right-0 bg-black">
-            <img class="w-12"  src="logo.png">
-            
-            <ul class="flex-1 text-center">
-                <li class="px-5 list-none inline-block"><a href="#Home" class="px-2 hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">Home</a></li>
-                <li class="px-5 list-none inline-block"><a href="#About" class="px-2 hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">About</a></li>
-                <li class="px-5 list-none inline-block"><a href="#Resume" class="px-2 hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">Resume</a></li>
-                <li class="px-5 list-none inline-block"><a href="#Projects" class="px-2 hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">Projects</a></li>
-                <li class="px-5 list-none inline-block"><a href="#Contact" class="px-2 hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">Contact</a></li>
+
+    <!-- NAV BAR  -->
+
+    <nav class="w-full flex justify-between items-center fixed bg-black px-3">
+        <img src="logo.png" class="w-20">
+        <div class="hidden md:flex">
+            <ul class="flex gap-5">
+                <li class="list-none inline-block"><a href="#Home"
+                        class=" hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">Home</a></li>
+                <li class="list-none inline-block"><a href="#About"
+                        class=" hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">About</a></li>
+                <li class="list-none inline-block"><a href="#Resume"
+                        class=" hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">Resume</a></li>
+                <li class="list-none inline-block"><a href="#Projects"
+                        class=" hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">Projects</a></li>
+                <li class="list-none inline-block"><a href="#Contact"
+                        class=" hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">Contact</a></li>
             </ul>
-            <button id="hiddenMenu" class="md:hidden focus:outline-none ">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-                </button>
-        </nav>
-    </div>
-    <div id="dropMenu" class="md:hidden hidden w-full py-16 bg-yellow-300">
-        <ul class="flex-1 text-center ">
-            <li class="px-5 list-none inline-block"><a href="#Home" class="px-2 hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">Home</a></li>
-            <li class="px-5 list-none inline-block"><a href="#About" class="px-2 hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">About</a></li>
-            <li class="px-5 list-none inline-block"><a href="#Resume" class="px-2 hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">Resume</a></li>
-            <li class="px-5 list-none inline-block"><a href="#Projects" class="px-2 hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">Projects</a></li>
-            <li class="px-5 list-none inline-block"><a href="#Contact" class="px-2 hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">Contact</a></li>
+        </div>
+        <button id="hiddenMenu" class="md:hidden focus:outline-none ">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+    </nav>
+    <div id="dropMenu" class="md:hidden hidden w-full py-10">
+        <ul class="flex flex-col">
+            <li class="px-5 list-none inline-block"><a href="#Home"
+                    class="px-2 hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">Home</a></li>
+            <li class="px-5 list-none inline-block"><a href="#About"
+                    class="px-2 hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">About</a></li>
+            <li class="px-5 list-none inline-block"><a href="#Resume"
+                    class="px-2 hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">Resume</a></li>
+            <li class="px-5 list-none inline-block"><a href="#Projects"
+                    class="px-2 hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">Projects</a></li>
+            <li class="px-5 list-none inline-block"><a href="#Contact"
+                    class="px-2 hover:text-yellow-300 hover:border-b-2 hover:border-yellow-300">Contact</a></li>
         </ul>
     </div>
 
     <!-- HOME  -->
 
-    <div id="Home" class="px-60 flex flex-row items-center justify-between pt-56">
-        <div class=" w-1/3">
+    <section id="Home" class="flex justify-evenly items-center flex-wrap px-5 pt-44 pb-56">
+        <div class="flex justify-center flex-col">
             <h6>HELLO !</h6>
-            <h2 class="text-3xl font-bold text-yellow-300"><br><span class="text-white">I'M</span> Hilde Nancy</h2>
-            <p class=" pt-4 leading-6">
-                Hardworking is not an option but a principle. Am a Front-end web developer
-                and UI/UX design.
+            <h2 class="text-2xl">I'M <span class="text-yellow-300"> Hilde Nancy</span></h2>
+            <p class="mt-5">
+                Hardworking is not an option but a principle. <br>
+                Am a freelancer web developer<br>
+                and UI/UX mobile and web designer based in Rwanda, <br>
+                I build value through design.
             </p>
-            <div class="mt-5">
-                <button class="bg-yellow-300 text-black px-3 py-1  rounded-full hover:border 
-                    hover:rounded-full hover:border-yellow-300 hover:bg-black hover:text-white animate-pulse">
-                    HIRE ME
-                </button>
+            <div class="flex mt-5">
+                <a>
+                    <button class="bg-yellow-300 text-black px-3 py-1  rounded-full hover:border 
+                    hover:rounded-full hover:border-yellow-300 hover:bg-black hover:text-white animate-pulse">HIRE ME</button>
+                </a>
                 <a href="#Projects">
-                <button class="px-3 py-1 border rounded-full border-yellow-300 hover:bg-yellow-300
-                     hover:text-black">
-                    MY WORKS
-                </button>
+                    <button class="px-3 py-1 border rounded-full border-yellow-300 hover:bg-yellow-300
+                    hover:text-black">MY WORK</button>
                 </a>
             </div>
         </div>
-        <div class="w-full x1:absolute xl:w-1/2 mt-16 bottom-0 right-20">
-            <img src="./image.png">
+        <div class="pt-8">
+            <img src="image.png">
         </div>
-    </div>
+    </section>
 
     <!-- ABOUT  -->
 
-    <section id="About" class="px-72 flex mt-72 gap-20">
-            <div class="w-1/2 bottom-0 mt-28">
-                <img src="image.png">
-            </div>
-            <div class="w-1/2 leading-normal">
-                <p class="text-3xl font-bold">About Me</p>
-                <p class="pt-5 mt-3">
-                    Names: Isingizwe Hilde Nancy
-                </p>
-                <p class="pt-3">
-                    Date of Birth: November, 25
-                </p>
-                <p class="pt-3">
-                    Address: Kicukiro 
-                </p>
-                <p class="pt-3">
-                    Phone: +250 783 399 776
-                </p>
-                <p class="pt-3">
-                    Email: Hildenancyi@gmail.com
-                </p>
-
-                <p class="pt-8"><span class="text-yellow-300">27</span> Projects complete</p>
-                <a href="file:///C:/Users/HP/Downloads/Resume.pdf">
-                    <button class="bg-yellow-300 text-black px-3 py-1 mt-4 rounded-full animate-pulse">DOWNLOAD CV</button>
-                </a>
-            </div>
-        </div>  
-        
+    <section id="About" class="flex justify-evenly items-center flex-wrap pt-32 mb-96">
+        <div>
+            <img src="image.png">
+        </div>
+        <div class="">
+            <p class="text-3xl">About me</p>
+            <p class="mt-10">Names: Isingizwe Hilde Nancy</p>
+            <p>Birthday: 25, November</p>
+            <p>Email: hildenancyi@gmail.com</p>
+            <p>phone: +250 783 399 776</p>
+            <p>Address: Kigali, Kicukiro</p>
+            <p class="mt-10"><span class="text-yellow-300">29</span> Projects complete</p>
+            <a href="file:///C:/Users/HP/Downloads/Resume.pdf">
+                <button class="mt-5 bg-yellow-300 text-black px-3 py-1  rounded-full hover:border 
+                hover:rounded-full hover:border-yellow-300 hover:bg-black hover:text-white animate-pulse">DOWNLOAD CV</button>
+            </a>
+        </div>
     </section>
 
     <!-- RESUME  -->
 
-    <div id="Resume" class="text-3xl mt-72" >
+    <div id="Resume" class="text-3xl mt-32" >
         <h2 class="flex justify-center">Resume</h2>
     </div>
     <section>
@@ -113,7 +114,11 @@
                     <li> Visual Elements or User Interface Design</li>
                     <li> Web Design Strategy and Information Architecture</li>
                     <li> Strategy and Information Architecture</li>
-                </ul>  
+                </ul> 
+                <a href="file:///C:/Users/HP/Desktop/Hilde/California%20University%20of%20ARTS/UIUX%20Design%20Specialist.pdf">
+                    <button class="px-3 py-1 mt-5 border rounded-full border-yellow-300 hover:bg-yellow-300
+                    hover:text-black"> VIEW CERTIFICATE </button>
+                </a> 
             </div>
         
             <div class="flex flex-col w-1/2 border-2 border-gray-500 p-4 ">
@@ -130,6 +135,10 @@
                     <li> Mobile Application Development</li>
                     <li> Datbase Programming</li>
                 </ul> 
+                <a href="#Projects">
+                    <button class="px-3 py-1 mt-5 border rounded-full border-yellow-300 hover:bg-yellow-300
+                    hover:text-black">VIEW DEGREE</button>
+                </a>
             </div>
         </div>
         
@@ -144,16 +153,22 @@
                     <li> c++ </li>
                     <li> html and css</li>
                     <li> MySQL and Oracle database developer</li>
-                </ul>       
+                </ul>  
+                <a href="#Projects">
+                    <button class="px-3 py-1 mt-5 border rounded-full border-yellow-300 hover:bg-yellow-300
+                    hover:text-black">VIEW DIPLOMA</button>
+                </a>     
             </div>
         
             <div class="flex flex-col w-1/2 border-2 border-gray-500 p-4 ">
                 <h6>2015-2021</h6>
                 <h2><b> Certificates of completion</b></h2>
                 <ul class="pt-3">
-                    <li> 2024: UI/UX Specialisation</li>
-                    <li> 2021: Resonate, RISE & STEM in partenership with Girls in ICT</li>
-                    <li> 2017: Student for Liberty Rwanda</li>
+                    <li> 2024: UI/UX Fundamental</li>
+                    <li> 2024: Visual Elements or User Interface Design</li>
+                    <li> 2024: Web Design Strategy and Information Architecture</li>
+                    <li> 2021: Resonate, RISE & STEM in partenership with Girls in ICT</li>                   
+                    <li> 2017: Student for Liberty Rwanda</li>                    
                     <li> 2015: Debate Competition Winner Learner</li>
                 </ul> 
             </div>
@@ -169,10 +184,18 @@
     <section class="bg-black text-white px-60 py-30 flex flex-col gap-20 items-center">
         <div class="flex flex-row items-center mt-5 gap-20 p-10 hover:border-l-2 hover:border-yellow-200">
             <div class="w-full x1:absolute xl:w-1/2 bottom-0 flex flex-row flex-wrap gap-2">
-                <img src="rock.png" class="w-48">
-                <img src="ageCalc.png" class="w-48">
-                <img src="dice.png" class="w-48">
-                <img src="emoji.png" class="w-48">
+                <a href="https://hildenancy25.github.io/RockPaperScissors/">
+                    <img src="rock.png" class="w-48">
+                </a>
+                <a href="https://hildenancy25.github.io/AgeCalculator/">
+                    <img src="ageCalc.png" class="w-48">
+                </a>
+                <a href="https://hildenancy25.github.io/Dice-Roll-Simulator/">
+                    <img src="dice.png" class="w-48">
+                </a>
+                <a href="https://hildenancy25.github.io/emoji/">
+                    <img src="emoji.png" class="w-48">
+                </a>
             </div>
             <div class="w-1/2 leading-normal pl-1">
                 <p class="text-gray-400">JavaScript, CSS, HTML</p>
@@ -181,7 +204,6 @@
                     this was quite amazing in both creation and testing. Building efficiency one 
                     line of code at a time! Dive into a project fueled by JavaScript, HTML, and CSS, 
                     where productivity meets innovation.
-
                 </p>
                 <p class="mt-3">JavaScript:</p>
                 <div class="bg-gray-500 w-96 h-3 rounded-full">
@@ -195,6 +217,7 @@
                 <div class="bg-gray-500 w-96 h-3 rounded-full">
                     <div class="bg-yellow-300 w-20 h-3 rounded-full"> </div>
                 </div>
+                
             </div>
         </div>
         <div class="flex flex-row-reverse items-center mt-5 gap-20 bg-zinc-800 p-10 hover:border-l-2 hover:border-yellow-200">
@@ -212,6 +235,12 @@
                     seamless experiences through intuitive design. Elevate user satisfaction with 
                     a UI/UX project driven by creativity and innovation.
                 </p>
+                <a href="file:///C:/Users/HP/Downloads/FILINI%20Wireframe.pdf">
+                    <button class="px-3 py-1 mt-4 border rounded-full border-yellow-300 hover:bg-yellow-300
+                         hover:text-black">
+                        View This Work
+                    </button>
+                </a>
             </div>
         </div> 
 
@@ -228,6 +257,12 @@
                     attention to detail and a focus on creating a user-friendly interface 
                     that seamlessly integrates with the user's fitness journey.
                 </p>
+                <a href="https://www.figma.com/proto/dyPp0gJPkl42bwBPXJTUhz/WAKA-Fitness?type=design&node-id=1-3&t=Ev8ceDROkBUyKOUF-0&scaling=min-zoom&page-id=0%3A1">
+                    <button class="px-3 py-1 mt-4 border rounded-full border-yellow-300 hover:bg-yellow-300
+                         hover:text-black">
+                        View This Work
+                    </button>
+                </a>
             </div>
         </div>  
 
@@ -237,18 +272,26 @@
                     UI/UX Design
                 </p>
                 <p>
-                    KGL SHAKES - Interface
+                    PROMOTE HER - mobile app
                 </p>
                 <p class="pt-5">
-                    In the "KGL Milkshakes" project, I used Figma 
+                    In the "Promote Her" project, I used Figma 
                     to create a vibrant and engaging digital experience 
-                    for a milkshake brand focused on quality and creativity
+                    for for Elevating young entrepreneur women who  pursued her dreams with unwavering 
+                    determination. focused on quality and creativity
                     where form meets function for a truly engaging experience.
                 </p>
+                <a href="https://www.figma.com/proto/6FeRyIyBorQEXbrPMsZhPv/Promote-HER?type=design&node-id=38-2&t=SiXuRn9clZUUgu3Y-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1">
+                    <button class="px-3 py-1 mt-4 border rounded-full border-yellow-300 hover:bg-yellow-300
+                         hover:text-black">
+                        View This Work
+                    </button>
+                </a>
             </div>
         
-            <div class="w-full x1:absolute xl:w-1/2 bottom-0">
-                <img src="./proj2.png">
+            <div class="w-full x1:absolute xl:w-1/2 flex bottom-0">
+                <img class="w-56" src="./Screenshot 2024-03-21 090934.png">
+                <img class="w-56" src="./proj5.png">
             </div>
         </div>
         
